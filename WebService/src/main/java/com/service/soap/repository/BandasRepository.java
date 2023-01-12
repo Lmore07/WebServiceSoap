@@ -26,15 +26,10 @@ public class BandasRepository {
 
     @PostConstruct
     public void init(){
-        try {
-            findAll();
-        }
-        catch (Exception es){
-
-        }
+        selecciona_todas();
     }
 
-    public List<Bandas> findAll() {
+    public List<Bandas> selecciona_todas() {
         return jdbcTemplate.query("SELECT * FROM banda",
                 (rs, rowNum) -> mapTobandas(rs));
     }
