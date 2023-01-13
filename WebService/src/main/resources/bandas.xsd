@@ -3,22 +3,6 @@
            targetNamespace="http://service.com/soap/bandas"
            elementFormDefault="qualified">
 
-    <xs:element name="getBandasRequest">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="id" type="xs:int"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-    <xs:element name="getBandasResponse">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="banda" type="tns:bandas"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
     <xs:complexType name="bandas">
         <xs:sequence>
             <xs:element name="id" type="xs:int"/>
@@ -27,4 +11,83 @@
             <xs:element name="pais" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:element name="getBandaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getBandaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="banda" type="tns:bandas"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getBandasRequest">
+        <xs:complexType>
+
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getBandasResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="banda" type="tns:bandas" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="deleteBandaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="deleteBandaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="mensaje" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="updateBandaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="banda" type="tns:bandas"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="updateBandaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="mensaje" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="insertBandaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="banda" type="tns:bandas"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="insertBandaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="mensaje" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
 </xs:schema>

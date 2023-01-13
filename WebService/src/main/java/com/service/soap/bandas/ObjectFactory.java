@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.7 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2023.01.12 a las 03:38:27 AM COT 
+// Generado el: 2023.01.13 a las 05:13:01 PM COT 
 //
 
 
@@ -37,6 +37,70 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetBandaRequest }
+     * 
+     */
+    public GetBandaRequest createGetBandaRequest() {
+        return new GetBandaRequest();
+    }
+
+    /**
+     * Create an instance of {@link UpdateBandaRequest }
+     * 
+     */
+    public UpdateBandaRequest createUpdateBandaRequest() {
+        return new UpdateBandaRequest();
+    }
+
+    /**
+     * Create an instance of {@link Bandas }
+     * 
+     */
+    public Bandas createBandas() {
+        return new Bandas();
+    }
+
+    /**
+     * Create an instance of {@link DeleteBandaResponse }
+     * 
+     */
+    public DeleteBandaResponse createDeleteBandaResponse() {
+        return new DeleteBandaResponse();
+    }
+
+    /**
+     * Create an instance of {@link InsertBandaRequest }
+     * 
+     */
+    public InsertBandaRequest createInsertBandaRequest() {
+        return new InsertBandaRequest();
+    }
+
+    /**
+     * Create an instance of {@link InsertBandaResponse }
+     * 
+     */
+    public InsertBandaResponse createInsertBandaResponse() {
+        return new InsertBandaResponse();
+    }
+
+    /**
+     * Create an instance of {@link DeleteBandaRequest }
+     * 
+     */
+    public DeleteBandaRequest createDeleteBandaRequest() {
+        return new DeleteBandaRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetBandaResponse }
+     * 
+     */
+    public GetBandaResponse createGetBandaResponse() {
+        return new GetBandaResponse();
+    }
+
+    /**
      * Create an instance of {@link GetBandasRequest }
      * 
      */
@@ -53,11 +117,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Bandas }
+     * Create an instance of {@link UpdateBandaResponse }
      * 
      */
-    public Bandas createBandas() {
-        return new Bandas();
+    public UpdateBandaResponse createUpdateBandaResponse() {
+        return new UpdateBandaResponse();
     }
 
 }

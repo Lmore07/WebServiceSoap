@@ -52,7 +52,6 @@ public class ConfigSoap {
         wsdl11Definition.setSchema(empSchema);
         return wsdl11Definition;
     }
-
     @Bean
     JdbcTemplate jdbcTemplate(DataSource dataSource) {
         return new JdbcTemplate(dataSource);
